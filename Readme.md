@@ -1,17 +1,10 @@
-To help you draft a `README.md` file for your synthetic data generation project, I'll provide a structured format that you can modify as needed. This README will include sections that describe the project, how to set up and run the notebooks and scripts, and the structure of your project directory based on the screenshot provided.
-
-### README.md for Synthetic Data Generation Project
-
----
-
-```markdown
 # Synthetic Data Generation for AI Systems
 
 ## Project Overview
 This project focuses on generating synthetic data to support AI model training in scenarios where real-world data is scarce, biased, or sensitive. The synthetic data generated here mimics Amazon product reviews within the "Supplements/Vitamins" category, aiming to provide realistic and diverse datasets for tasks such as intent detection, slot filling, and recommendation algorithms.
 
 ## Repository Structure
-```
+```bash
 SHL-RESEARCH-ASSIGNMENT/
 │
 ├── .ipynb_checkpoints/          # Jupyter notebook checkpoint files
@@ -87,7 +80,7 @@ Enable the following APIs by visiting "APIs & Services" > "Library":
 ### 6. **Monitoring**
 - Monitor the training progress via AI Platform jobs in the Google Cloud Console.
 
----
+
 
 **Notes:**
 - Replace placeholders like `<local-data-files>` and `<your-bucket-name>` with your specific values.
@@ -98,14 +91,6 @@ This setup guide provides a high-level overview ideal for users already somewhat
 ## Contributing
 Contributions to this project are welcome. Please fork the repository and submit a pull request with your changes.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
-```
-
-## Additional Information
-For any further queries, please open an issue in the repository or contact the maintainers directly.
-
----
 
 ### Explanation of Sections
 
@@ -114,6 +99,3 @@ For any further queries, please open an issue in the repository or contact the m
 - **Setup and Installation**: Instructions on how to set up the project environment.
 - **Usage**: Steps on how to use the notebooks and scripts.
 - **Contributing**: Guidelines on how to contribute to the project.
-- **License**: Information about the project's license.
-
-Feel free to customize this template further according to your project's specifics and the documentation you want to provide. If you need a more detailed explanation of any script or process, include that information as necessary.
