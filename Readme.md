@@ -1,9 +1,11 @@
 # Synthetic Data Generation for AI Systems
 
 ## Project Overview
+
 This project focuses on generating synthetic data to support AI model training in scenarios where real-world data is scarce, biased, or sensitive. The synthetic data generated here mimics Amazon product reviews within the "Supplements/Vitamins" category, aiming to provide realistic and diverse datasets for tasks such as intent detection, slot filling, and recommendation algorithms.
 
 ## Repository Structure
+
 ```bash
 SHL-RESEARCH-ASSIGNMENT/
 │
@@ -26,36 +28,54 @@ SHL-RESEARCH-ASSIGNMENT/
 ```
 
 ## Setup and Installation
+
 Ensure you have Python 3.8+ installed on your machine. To install the necessary libraries, run the following command:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Usage
-To run the notebooks, ensure you have Jupyter installed:
+
+1. **To run the notebooks, ensure you have Jupyter installed:**:
+
 ```bash
 pip install jupyter
 ```
-Then start the notebook server from the root of the repository:
+
+2. **Download the Dataset**:
+
+   - Download the required dataset from Google Drive:
+     - [Download Dataset](https://drive.google.com/file/d/19eTFRj2ctWYOmdYHuC7h7qlBBDYqSVVM/view)
+   - Click on the link, and then click the "Download" button on the top right corner of the page to download the dataset to your local machine.
+
+3. **Place the Dataset in Your Working Directory**:
+   - After downloading the dataset, place it in the root of your repository where your Jupyter notebooks are located. This ensures that when you run the notebooks, they can easily access and load the dataset for analysis.
+
+4. **Then start the notebook server from the root of the repository**:
+
 ```bash
 jupyter notebook
 ```
-
 
 # Google Cloud Setup for Model Training
 
 Follow these steps to configure Google Cloud for training models using `trainModelGcloud.py`:
 
 ### 1. **Google Cloud Project Setup**
+
 - **Create Project**: Navigate to [Google Cloud Console](https://console.cloud.google.com/) and create a new project.
 - **Enable Billing**: Link a billing account to your project.
 
 ### 2. **Enable APIs**
+
 Enable the following APIs by visiting "APIs & Services" > "Library":
+
 - AI Platform Training & Prediction API
 - Compute Engine API
 
 ### 3. **Cloud Storage Setup**
+
 - **Create Bucket**: Create a new Cloud Storage bucket in your project for storing data and training outputs.
 - **Upload Data**: Use `gsutil` or the Cloud Console to upload the necessary data to your bucket:
   ```bash
@@ -63,6 +83,7 @@ Enable the following APIs by visiting "APIs & Services" > "Library":
   ```
 
 ### 4. **Configure Google Cloud SDK**
+
 - Install and initialize the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install).
 - Authenticate and set your project:
   ```bash
@@ -71,6 +92,7 @@ Enable the following APIs by visiting "APIs & Services" > "Library":
   ```
 
 ### 5. **Run Training Script**
+
 - Modify `trainModelGcloud.py` to use your Cloud Storage paths and specific configurations.
 - Execute the script locally:
   ```bash
@@ -78,19 +100,19 @@ Enable the following APIs by visiting "APIs & Services" > "Library":
   ```
 
 ### 6. **Monitoring**
+
 - Monitor the training progress via AI Platform jobs in the Google Cloud Console.
 
-
-
 **Notes:**
+
 - Replace placeholders like `<local-data-files>` and `<your-bucket-name>` with your specific values.
 - Always check for any permissions or roles needed, especially if you encounter access issues.
 
 This setup guide provides a high-level overview ideal for users already somewhat familiar with Google Cloud Platform, streamlining their experience without extensive hand-holding. Adjust the level of detail based on the audience's familiarity with Google Cloud.
 
 ## Contributing
-Contributions to this project are welcome. Please fork the repository and submit a pull request with your changes.
 
+Contributions to this project are welcome. Please fork the repository and submit a pull request with your changes.
 
 ### Explanation of Sections
 
