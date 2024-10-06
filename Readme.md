@@ -20,7 +20,7 @@ SHL-RESEARCH-ASSIGNMENT/
 ├── synthetic_product_data50.csv # 50 generated synthetic product data entries
 ├── synthetic_product_data100.csv # 100 generated synthetic product data entries
 ├── synthetic_reviews.csv        # Synthetic reviews generated from the model
-│
+├── synthetic_reviews_100.csv#   #Synthetic reviews generated from the model
 ├── train.py                     # Script for training models
 └── trainModelGcloud.py          # Script for training models on Google Cloud
 ```
